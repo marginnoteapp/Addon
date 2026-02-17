@@ -17,8 +17,10 @@
 @property (nonatomic, strong) UIColor *highlightedTextColor;
 @property (nonatomic, strong) UIColor *shadowColor;
 @property (nonatomic) CGSize shadowOffset;
+#if !TARGET_OS_XR
 @property (nonatomic) UITextAlignment textAlignment;
 @property (nonatomic) UILineBreakMode lineBreakMode;
+#endif
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 @property (nonatomic) NSInteger numberOfLines;                    // currently only supports 0 or 1
 @property (nonatomic) UIBaselineAdjustment baselineAdjustment;    // not implemented

@@ -26,7 +26,9 @@
 + (void)addonWillDisconnect;
 + (void)applicationDidEnterBackground;
 + (void)applicationWillEnterForeground;
+#if !TARGET_OS_XR
 + (void)applicationDidReceiveLocalNotification:(UILocalNotification*)notify;
+#endif
 #pragma clang diagnostic pop
 
 @end

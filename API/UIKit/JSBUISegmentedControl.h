@@ -10,7 +10,9 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
+#if !TARGET_OS_XR
 @property (nonatomic) UISegmentedControlStyle segmentedControlStyle;
+#endif
 @property (nonatomic, readonly) NSUInteger numberOfSegments;
 @property (nonatomic) NSInteger selectedSegmentIndex;
 @property (nonatomic, getter = isMomentary) BOOL momentary;

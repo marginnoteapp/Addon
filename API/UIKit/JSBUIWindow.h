@@ -10,7 +10,9 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
+#if !TARGET_OS_XR
 @property (nonatomic, retain) UIScreen *screen;
+#endif
 @property (nonatomic, readonly, getter = isKeyWindow) BOOL keyWindow;
 @property (nonatomic, retain) UIViewController *rootViewController;
 @property (nonatomic) UIWindowLevel windowLevel;

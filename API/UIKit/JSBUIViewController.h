@@ -29,7 +29,9 @@
 //@property (nonatomic, readonly, retain) id topLayoutGuide;
 @property (nonatomic, readonly) UIViewController *presentedViewController;
 //@property (nonatomic, readonly, retain) id bottomLayoutGuide;
+#if !TARGET_OS_XR
 @property (nonatomic, readonly, retain) UISearchDisplayController *searchDisplayController;
+#endif
 @property (nonatomic, getter = isEditing) BOOL editing;
 @property (nonatomic, retain) UIView *view;
 @property (nonatomic, assign) UIModalTransitionStyle modalTransitionStyle;

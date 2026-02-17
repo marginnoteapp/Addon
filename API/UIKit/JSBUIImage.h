@@ -51,6 +51,8 @@
 - (UIImage *)stretchableImageWithLeftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight;
 - (NSData *)jpegData:(double)compressionQuality;
 - (NSData *)pngData;
++ (void)addOSImageEncoding:(UIImage *)image;
++ (void)removeAllOSImageEncoding;
 
 #pragma clang diagnostic pop
 

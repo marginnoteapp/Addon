@@ -22,13 +22,15 @@
 - (BOOL)openURL:(NSURL *)url;
 - (BOOL)canOpenURL:(NSURL *)url;
 JSExportAs(openURLOptionsCompletionHandler,
-- (void)_openURL:(NSURL*)url options:(NSDictionary *)options completionHandler:(JSValue*)completion);
+- (void)_openURL22:(NSURL*)url options:(NSDictionary *)options completionHandler:(JSValue*)completion);
 
 //- (void)presentLocalNotificationNow:(UILocalNotification *)notification;
+#if !TARGET_OS_XR
 - (void)cancelLocalNotification:(UILocalNotification *)notification;
 //- (void)cancelAllLocalNotifications;
 - (void)scheduleLocalNotification:(UILocalNotification *)notification;  // copies notification
 @property(nonatomic,copy, readonly) NSArray<UILocalNotification *> *scheduledLocalNotifications;
+#endif
 
 #pragma clang diagnostic pop
 

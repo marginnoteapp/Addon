@@ -96,9 +96,9 @@ JSExportAs(transitionFromViewToViewDurationOptionsCompletion,
 - (void)drawRect:(CGRect)rect;
 - (void)setNeedsDisplay;
 - (void)setNeedsDisplayInRect:(CGRect)rect;
-//- (void)addGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer;
-//- (void)removeGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer;
-//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer;
+- (void)addGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer;
+- (void)removeGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer;
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer;
 //- (void)addMotionEffect:(UIMotionEffect *)effect;
 //- (void)removeMotionEffect:(UIMotionEffect *)effect;
 //- (NSArray *)constraints;
